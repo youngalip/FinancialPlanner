@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ringkasan Keuangan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Ringkasan Keuangan</h1>
+
+  <!-- Ringkasan Keuangan -->
+  <section id="summary">
+    <p><strong>Total Income:</strong> Rp <span id="total-income">0</span></p>
+    <p><strong>Total Outcome:</strong> Rp <span id="total-outcome">0</span></p>
+    <p><strong>Total Hutang:</strong> Rp <span id="total-debt">0</span></p>
+    <p><strong>Sisa Keuangan Saat Ini:</strong> Rp <span id="net-balance">0</span></p>
+  </section>
+
+  <!-- Wishlist -->
+  <section id="wishlist-summary">
+    <h2>Wishlist</h2>
+    <div id="wishlist-items">
+      <!-- Wishlist items will be dynamically populated here -->
+    </div>
+  </section>
+
+  <!-- Riwayat Income -->
+  <section id="history-income">
+    <h2>Riwayat Income</h2>
+    <ul id="income-list"></ul>
+  </section>
+
+  <!-- Riwayat Outcome -->
+  <section id="history-outcome">
+    <h2>Riwayat Outcome</h2>
+    <ul id="outcome-list"></ul>
+  </section>
+
+  <!-- Reset Data & Hutang -->
+  <div class="action-buttons-container">
+    <button onclick="resetAllData()" class="button-small">Reset Semua Data</button>
+    <button id="pay-debt-button" class="button-small">Lunasi Hutang</button>
+  </div>
+  
+  <!-- Link Kembali -->
+  <div style="margin-top: 15px;">
+    <a href="index.html" class="back-link">Kembali ke Input</a>
+  </div>
+
+  <script src="recap.js"></script>
+</body>
+</html>
